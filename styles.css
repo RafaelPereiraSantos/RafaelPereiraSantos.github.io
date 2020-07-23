@@ -4,41 +4,159 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  text-decoration: underline;
+}
+
 html {
   height: 100%;
 }
 
 body {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  background-color:#fafafa;
   width: 100%;
   height: 100%;
 }
 
-.content {
+hr {
+  width: 96vw;
+  height:2px;
+  border-width:0;
+  color:#2e2e2e;
+  background-color:#2e2e2e
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: grey;
+}
+
+.board-container {
+  background-color:#383838;
   display: flex;
   justify-content:center;
   align-items: center;
   flex-direction: column;
 }
 
-.not-found {
-  font-size: 5em;
+.board {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#383838;
+  width: 100%;
+  height: 100vh;
+}
+
+.board-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 55vw;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.info-container {
+  /*background-color: grey;*/
+  width:  100%;
+  height: 60vh;
+}
+
+.info {
+  padding-top: 10vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.info-text {
+  margin-top: 1.5vh;
+}
+
+.info-content-sub-title {
+  color: #fafafa;
+  font-size: 3vw;
+}
+
+.info-content-title {
+  font-size: 4vw;
+}
+
+.info-content-main-title {
+  font-size: 5vw;
+}
+
+.info-special {
+  color: #33ffdd;
+}
+
+.info-content-description {
+  color: #fafafa;
+  font-size: 2vw;
+}
+
+.info-content-sub-description {
+  color: #dbdbdb;
+  font-size: 1.2vw;
 }
 
 .text-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
   border-style: dashed;
   border-width: 0.8em;
   color: black;
   padding: 20px 100px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .text {
   font-size: 2em;
+}
+
+.stack-board-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.stack-board {
+  display: flex;
+  align-items: center;
+  padding-top: 5vh;
+  padding-right: 2vw;
+  width: 100%;
+}
+
+.stack-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  margin-right: 2vw;
+  font-weight: 100;
+}
+
+
+li {
+  list-style-type:none;
+  color: #33ffdd;
+  padding-top: 0.5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
