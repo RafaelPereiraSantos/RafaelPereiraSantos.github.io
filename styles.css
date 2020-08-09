@@ -1,18 +1,21 @@
-
 * {
   padding: 0;
   margin: 0;
 }
 
+@keyframes link-transition {
+  from {color: #33ffdd;}
+  to {color: #fafafa;}
+}
+
 a {
-  text-decoration: none;
   text-decoration: none;
   color: #33ffdd;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #fafafa;
+  animation: link-transition 0.5s linear 1 normal forwards;
 }
 
 .header-item > a:hover {
@@ -25,12 +28,13 @@ html {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   height: 100%;
 }
 
 hr {
-  width: 96vw;
+  width: 96%;
   height:2px;
   border-width:0;
   color:#2e2e2e;
@@ -102,7 +106,7 @@ hr {
   align-items: center;
   flex-direction: column;
   background-color:#383838;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -124,14 +128,28 @@ hr {
 }
 
 .info-container {
+  margin-top: 10vh;
   width:  100%;
-  height: 60vh;
+  height: 70vh;
 }
 
 .info {
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  flex-direction: column;
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  height: 100%;
+}
+
+.contact-info-item-header {
+  height: 30%;
+}
+
+.contact-info-item-body {
+  height: 70%;
 }
 
 .info-text {
@@ -146,6 +164,7 @@ hr {
 .info-content-sub-title {
   color: #fafafa;
   font-size: 40px;
+  font-weight: 600;
 }
 
 .info-content-main-title {
@@ -163,11 +182,15 @@ hr {
 .info-content-description {
   color: #b8b8b8;
   font-size: 35px;
+  line-height: 1.4em;
+  font-weight: 600;
 }
 
 .info-content-sub-description {
   color: #dbdbdb;
   font-size: 26px;
+  line-height: 1.5em;
+  font-weight: 600;
 }
 
 .text-container {
@@ -181,31 +204,23 @@ hr {
   padding: 20px 100px;
 }
 
-.text {
-  font-size: 2em;
-}
-
 .stack-board-container {
+  width: 100%;
   display: flex;
-  justify-content:center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .stack-board {
+  margin-top: 1.5vh;
   display: flex;
-  align-items: center;
-  padding-top: 5vh;
-  padding-right: 2vw;
-  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.stack-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1.5em;
-  margin-right: 2vw;
+.stack-item {
+  flex: 1;
+  margin-right: auto;
   font-weight: 100;
 }
 
@@ -218,11 +233,72 @@ li {
   padding-right: 2vw;
 }
 
-.social-content {
+.contacts-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+
+.contacts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts {
+
+}
+
+.contacts-content {
+  margin-top: 3vh;
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content:space-around;
+}
+
+.contacts-content > a {
+  text-decoration: none;
+}
+
+.contact-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.footer-container {
+  height: 300px;
+  background-color: #242424;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  color: #fafafa;
+}
+
+.footer-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-item {
+  height: 40px;
+}
+
+.footer-space-separator > hr{
+  color:#2e2e2e;
+  background-color:#2e2e2e
 }
 
 img {
@@ -230,7 +306,7 @@ img {
   height: 100px;
 }
 
-@media all and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .header-content {
     width: 100%;
   }
@@ -241,11 +317,37 @@ img {
 
   .info {
     padding-top: 0;
+    height: 100%;
   }
 
   .board-content {
-    width: 100%;
+    width: 90%;
   }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+/*
+  .info-content-title {
+    font-size: 90em;
+  }
+
+  .info-content-sub-title {
+    font-size: 90em;
+  }
+
+  .info-content-main-title {
+    font-size: 90em;
+  }
+
+  .info-content-description {
+    font-size: 35px;
+  }
+
+  .info-content-sub-description {
+    font-size: 26px;
+  }*/
 }
 
 @media all and (max-height: 600px) {
