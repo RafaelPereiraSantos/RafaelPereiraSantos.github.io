@@ -292,13 +292,29 @@ li {
   flex-direction: column;
 }
 
+.principal-footer-item {
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  line-height: 50px;
+}
+
 .footer-item {
-  height: 40px;
+  text-align: center;
 }
 
 .footer-space-separator > hr{
   color:#2e2e2e;
   background-color:#2e2e2e
+}
+
+.credits-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
 }
 
 img {
