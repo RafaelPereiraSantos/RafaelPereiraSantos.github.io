@@ -69,12 +69,13 @@ hr {
   width: 100vw;
   height: 60px;
   background-color: var(--principal-fg-color);
-  display: flex;
-  justify-content:center;
-  align-items: center;
 }
 
 .header {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
   height: 100%;
 }
 
@@ -160,7 +161,7 @@ hr {
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .contact-info-item-header {
@@ -212,16 +213,7 @@ hr {
   font-weight: 600;
 }
 
-.text-container {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-  border-style: dashed;
-  border-width: 0.8em;
-  color: black;
-  padding: 20px 100px;
-}
+
 
 .stack-board-container {
   width: 100%;
@@ -342,7 +334,7 @@ img {
 
   .header-content {
     height: 100%;
-    min-width: 100%;
+    width: 100%;
   }
 
   .header-secondary-info {
@@ -359,7 +351,6 @@ img {
   }
 
   .inner-link {
-    color: red;
     width: 100%;
     text-align: center;
   }
@@ -375,6 +366,23 @@ img {
 
   .board-content {
     width: 100%;
+  }
+
+  .contact-title {
+    text-align: center;
+  }
+
+  .contact-desktop {
+    display: none;
+  }
+
+  .contacts-content {
+    margin-top: 3vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
