@@ -219,8 +219,6 @@ hr {
   font-weight: 600;
 }
 
-
-
 .stack-board-container {
   width: 100%;
   display: flex;
@@ -366,6 +364,12 @@ img {
 
   .info-container {
     min-height: 80vh;
+  }
+
+  .info-content-sub-description {
+    font-size: var(--secondary-description-font-size);
+    line-height: 1.4em;
+    font-weight: 600;
   }
 
   .info {
