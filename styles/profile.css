@@ -1,0 +1,52 @@
+:root {
+  --profile-item-top-margin-top: 2.5vh;
+  --test: 69rem;
+
+}
+
+.profile-picture {
+  display: none;
+  min-width: 100%;
+}
+
+.profile-picture-content {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.profile-pic-spacing {
+  margin-top: var(--profile-item-top-margin-top);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.profile-pic-spacing > hr {
+  display: none;
+  width: 90%;
+  margin-top: 0px;
+}
+
+.profile-sub-title {
+  margin-top: var(--profile-item-top-margin-top);
+}
+
+.profile-picture-content  > img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--principal-fg-color);
+  width: 50vw;
+  height: 50vw;
+}
+
+@media only screen and (max-width: 69rem) {
+  .profile-picture {
+    display: initial;
+  }
+
+  .profile-pic-spacing > hr {
+    display: initial;
+  }
+}
