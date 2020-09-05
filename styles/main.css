@@ -42,7 +42,7 @@ hr {
   height: 2px;
   border-width: 0;
   color: var(--secondary-bg-color);
-  background-color: var(--secondary-bg-color)
+  background-color: var(--secondary-bg-color);
 }
 
 .header-container {
@@ -322,6 +322,14 @@ img {
 
 @media only screen and (max-width: 69rem) {
 
+  a:hover {
+    animation: none;
+  }
+
+  .header-item > a:hover {
+    color: var(--link-color);
+  }
+
   .header-container {
     font-size: var(--principal-description-font-size);
     top: initial;
@@ -333,6 +341,15 @@ img {
   .header-content {
     height: 100%;
     width: 100%;
+  }
+
+  .header-item-container {
+    border-left-style: solid;
+    border-left-color: var(--secondary-bg-color);
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-top-color: var(--secondary-bg-color);
+    border-top-width: 2px;
   }
 
   .header-secondary-info {
