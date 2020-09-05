@@ -16,4 +16,5 @@
   --small-screen-width: 2000em;
   --content-min-width: 800px;
   --mobile-width: 69rem;
+  --mobile-header-height: 100px;
 }
